@@ -1,0 +1,129 @@
+/**
+
+*! Changing defaukt style in browser
+
+**/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+i{
+    cursor:pointer;
+}
+a{
+    text-decoration:none ;
+    color: white;
+}
+/**
+* ! Navbar styles are here
+**/
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #3f37c9;
+    color: white;
+    padding: 25px 60px;
+    margin-bottom: 30px;
+
+}
+
+.cart{
+    position: relative;
+    background-color: #fff;
+    color:rgb(226, 43, 43);
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.cartAmount{
+    position: absolute;
+    top: -20px;
+    right:-10px;
+    background-color: rgb(16, 236, 126);
+    color: white;
+    font-size: 22px;
+    padding: 2px;
+    border-radius: 3px;
+
+}
+/**
+*! The shop item styles are here
+**/
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4,230px);
+    gap: 20px;
+    justify-content: center;
+   
+}
+
+@media(max-width: 1000px){
+    .shop{
+        grid-template-columns: repeat(2,230px);
+    }
+}
+
+@media(max-width: 600px){
+    .shop{
+        grid-template-columns: repeat(1,230px);
+    }
+}
+
+.item{
+    border: 2px solid #030303;
+    border-radius: 5px;
+   
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px; 
+}
+
+.price-quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    font-size: 19px;
+}
+
+.bi-dash-square{
+    color: rgb(255, 0, 8);
+    padding-top: 5px;
+}
+
+.bi-plus-square{
+    color: rgb(37, 190, 13);
+    padding-top: 5px;
+}
+
+.quantity{
+    padding-top: 5px;
+}
+
+.text-centrer{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.HomeBtn{
+    background-color: #3f37c9;
+    
+}
